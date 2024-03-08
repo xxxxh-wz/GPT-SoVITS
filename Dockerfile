@@ -20,7 +20,7 @@ COPY requirements.txt /workspace/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Define a build-time argument for image type
-ARG IMAGE_TYPE=full
+ARG IMAGE_TYPE=elite
 
 # Conditional logic based on the IMAGE_TYPE argument
 # Always copy the Docker directory, but only use it if IMAGE_TYPE is not "elite"
@@ -41,5 +41,3 @@ COPY . /workspace
 COPY . /workspace
 
 EXPOSE 9871 9872 9873 9874 9880
-
-CMD ["python", "webui.py"]

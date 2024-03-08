@@ -1,0 +1,52 @@
+{
+    "大格蕾修": {
+        "refer_audio_path": "role_models/大格蕾修/跨越无垠的时空，星光终于与我们相遇。.wav",
+        "gpt_path": "role_models/大格蕾修/24.2.10MissGreco-e15.ckpt",
+        "sovits_path": "role_models/大格蕾修/24.2.10MissGreco_e40_s280.pth"
+    },
+    "byf": {
+        "gpt_path": "role_models/byf/bfy-e12.ckpt",
+        "sovits_path": "role_models/byf/bfy_e15_s120.pth",
+        "refer_audio_path": "role_models/byf/他会很体贴的陪伴在我身旁。.wav"
+    },
+    "紫灵": {
+        "gpt_path": "role_models/紫灵/ziling-e15.ckpt",
+        "refer_audio_path": "role_models/紫灵/这便是另外一半，若是此物对前辈有用，就请收下吧。 .wav",
+        "sovits_path": "role_models/紫灵/ziling_e8_s128.pth"
+    },
+    "彩鳞": {
+        "sovits_path": "role_models/彩鳞/2.18zilin_e60_s780.pth",
+        "gpt_path": "role_models/彩鳞/2.18zilin-e20.ckpt",
+        "refer_audio_path": "role_models/彩鳞/只要那个毒女不出手，就没人能伤本王。.wav"
+    },
+    "爱莉希雅": {
+        "sovits_path": "role_models/爱莉希雅/24.2.21Elysia_e60_s1740.pth",
+        "refer_audio_path": "role_models/爱莉希雅/爱莉希雅-你好，新的一天从一场美妙的邂逅开始。.wav",
+        "gpt_path": "role_models/爱莉希雅/24.2.21Elysia-e10.ckpt"
+    },
+    "德丽莎": {
+        "sovits_path": "role_models/德丽莎/24.2.10Teresa_e40_s360.pth",
+        "refer_audio_path": "role_models/德丽莎/德丽莎-要和德丽莎一起睡午觉吗？.wav",
+        "gpt_path": "role_models/德丽莎/24.2.10Teresa-e15.ckpt"
+    },
+    "八重神子": {
+        "refer_audio_path": "role_models/八重神子/经典的青春友情剧，不管怎么样都百看不厌啊。.wav",
+        "gpt_path": "role_models/八重神子/24.2.10YaeMiko-e15.ckpt",
+        "sovits_path": "role_models/八重神子/24.2.10YaeMiko_e40_s2880.pth"
+    },
+    "妮露": {
+        "refer_audio_path": "role_models/妮露/嘿嘿，其实我早就感受到啦，你在艺术欣赏上有着很高的造诣。.wav",
+        "gpt_path": "role_models/妮露/24.2.23nilu-e10.ckpt",
+        "sovits_path": "role_models/妮露/24.2.23nilu_e60_s2940.pth"
+    },
+    "派蒙": {
+        "sovits_path": "role_models/派蒙/paimeng_e75_s81900.pth",
+        "gpt_path": "role_models/派蒙/paimeng2-e10.ckpt",
+        "refer_audio_path": "role_models/派蒙/既然罗莎莉亚说足迹上有元素力，用元素视野应该能很清楚地看到吧。.wav"
+    },
+    "xiaoxianer": {
+        "sovits_path": "role_models/xiaoxianer/xxx_e40_s680.pth",
+        "refer_audio_path": "role_models/xiaoxianer/来到客厅，看到父亲坐在那看电视。.wav",
+        "gpt_path": "role_models/xiaoxianer/xxx-e15.ckpt"
+    }
+}
