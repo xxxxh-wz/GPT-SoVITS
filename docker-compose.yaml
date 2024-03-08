@@ -2,23 +2,20 @@ version: '3.8'
 
 services:
   gpt-sovits:
-    image: breakstring/gpt-sovits:latest   # please change the image name and tag base your environment. If the tag contains the word 'elite', such as "latest-elite", it indicates that the image does not include the necessary models such as GPT-SoVITS, UVR5, Damo ASR, etc. You will need to download them yourself and map them into the container.
-    container_name: gpt-sovits-container
+    image: gpt-vits-customize:24.3.3  # please change the image name and tag base your environment. If the tag contains the word 'elite', such as "latest-elite", it indicates that the image does not include the necessary models such as GPT-SoVITS, UVR5, Damo ASR, etc. You will need to download them yourself and map them into the container.
+    container_name: gpt-sovits-customize-container
     environment:
       - is_half=False
       - is_share=False
     volumes:
-      - ./output:/workspace/output
-      - ./logs:/workspace/logs
-      - ./SoVITS_weights:/workspace/SoVITS_weights
-      - ./reference:/workspace/reference
+      - ./:/workspace/
     working_dir: /workspace
     ports:
-      - "9880:9880"
-      - "9871:9871"
-      - "9872:9872"
-      - "9873:9873"
-      - "9874:9874"
+      - "14116:9880" #仅开放用于api调用的端口
+      #- "9871:9871"
+      #- "9872:9872"
+      #- "9873:9873"
+      #- "9874:9874"
     shm_size: 16G
     deploy:
       resources:
@@ -30,3 +27,4 @@ services:
     stdin_open: true
     tty: true
     restart: unless-stopped
+    command: python /workspace/api_alpha.py
